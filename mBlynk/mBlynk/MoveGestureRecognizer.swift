@@ -104,63 +104,7 @@ class MoveGestureRecognizer:UIGestureRecognizer {
         
         
         center.y = yy
-        
-     
-//        var xcount:Int = Int(center.x / (bounds.width/2))
-//  
-//        if (bounds.width <= cell) {
-//            if (xcount % 2 == 0) {
-//                xcount += 1
-//            }
-//        }
-//        
-//        
-//        if xcount <= 0 {
-//            xcount = 0
-//        }
-//        
-//
-//        if (bounds.width >= cell!*2) {
-//            if (xcount >= 6) {
-//                xcount = 5
-//            }
-//        }
-//       
-//        
-//        let x = (CGFloat(xcount) * (bounds.width/2))
-//        
-// 
-//        center.x = x
-//        
-//        var ycount:Int = Int(center.y / (bounds.height/2))
-//        //        let yremainder = center.y % (bounds.height/2)
-//        if (bounds.height <= cell) {
-//            if (ycount % 2 == 0) {
-//                ycount += 1
-//            }
-//            
-//            if ycount <= 1 {
-//                ycount = 3
-//            }
-//            
-//            if ycount > totalCount!*2 {
-//                ycount = totalCount!*2-1
-//            }
-//        } else if (bounds.height >= cell!*2) {
-//            if ycount <= 1 {
-//                ycount = 2
-//            }
-//            
-//            if ycount > totalCount {
-//                ycount = totalCount!-1
-//            }
-//        }
-//        
-//        let y = (CGFloat(ycount) * (bounds.height/2))
-        
-        
-    
-//        center.y = y
+
 
         let t1 = yy - bounds.height/2
         let b1 = yy + bounds.height/2

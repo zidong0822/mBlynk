@@ -14,6 +14,7 @@ class ViewController: UIViewController,UIGestureRecognizerDelegate {
     var uiImageView1: MUIImageView! = nil
     var banana: UIImageView? = UIImageView()
     var mankey: UIImageView? = UIImageView()
+    var deleteImageView: UIImageView! = nil
     var netTranslation : CGPoint! = CGPoint(x: 0, y: 0)//平移
     var currentView:UIView? = nil
     var cell: CGFloat? = nil
@@ -51,14 +52,15 @@ class ViewController: UIViewController,UIGestureRecognizerDelegate {
         shapeLayer.lineDashPattern = [NSNumber.init(int: 6), NSNumber.init(int: 6)]
         view.layer.addSublayer(shapeLayer)
 
-
+      
         
         
         banana!.frame = CGRectMake(cell!, cell!, cell! * 1, cell! * 2)
         banana!.backgroundColor = UIColor.purpleColor()
-        banana?.userInteractionEnabled = true
-        self.view.addSubview(banana!)
+        view.addSubview(banana!)
         banana!.tag = 11
+        banana?.userInteractionEnabled = true
+        
         
         mankey!.frame = CGRectMake(cell!*2, cell!*3, cell! * 2, cell! * 2)
         mankey!.backgroundColor = UIColor.purpleColor()
@@ -66,21 +68,28 @@ class ViewController: UIViewController,UIGestureRecognizerDelegate {
         self.view.addSubview(mankey!)
         mankey!.tag = 12
         
-        let filteredSubviews = self.view.subviews.filter({$0.tag > 0})
-        for view in filteredSubviews  {
-            print(view.tag)
-        }
         
         
+        deleteImageView = UIImageView(frame: CGRectMake(cell!*CGFloat(0), cell!*CGFloat(10), cell!*6, cell!*1))
+        deleteImageView.backgroundColor = UIColor.blueColor()
+        deleteImageView.tag = 345
+        deleteImageView.hidden = true
+        deleteImageView.userInteractionEnabled = false
+        self.view.addSubview(deleteImageView)
+
         
-        let recognizer = MoveGestureRecognizer(target: self, action:#selector(handleTap(_:)))
+        
+        let filteredSubviews = self.view.subviews.filter({$0.tag > 0 && $0.hidden == false})
+        
+        
+        let recognizer = MoveGestureRecognizer(target: self, action:#selector(handleTap))
         recognizer.setTotalCount(count!, c: cell!, views: filteredSubviews.filter({$0.tag != banana!.tag}))
         recognizer.delegate = self
         banana!.addGestureRecognizer(recognizer)
         
         
         
-        let recognizer1 = MoveGestureRecognizer(target: self, action:#selector(handleTap(_:)))
+        let recognizer1 = MoveGestureRecognizer(target: self, action:#selector(handleTap))
         recognizer1.setTotalCount(count!, c: cell!, views: filteredSubviews.filter({$0.tag != mankey!.tag}))
         recognizer1.delegate = self
         mankey!.addGestureRecognizer(recognizer1)
@@ -91,7 +100,6 @@ class ViewController: UIViewController,UIGestureRecognizerDelegate {
 
     func handleTap(recognizer: UITapGestureRecognizer) {
      
-        
         print("handleTap")
     }
     
@@ -102,14 +110,33 @@ class ViewController: UIViewController,UIGestureRecognizerDelegate {
         return true
     }
     
-    //    var currentCenter:CGPoint? = nil
     func gestureRecognizer(gestureRecognizer: UIGestureRecognizer,
                            shouldRecognizeSimultaneouslyWithGestureRecognizer:UIGestureRecognizer) -> Bool {
         print("gestureRecognizer")
-        
+//        let bottom = ((gestureRecognizer.view?.center.y)! + (gestureRecognizer.view?.bounds.height)!/2)/cell!
+//        if (gestureRecognizer.state == UIGestureRecognizerState.Ended && (bottom >= 10)) {
+//            print("bottom >= 10")
+//            deleteImageView.hidden = false
+//            deleteImageView.backgroundColor = UIColor.redColor()
+//            gestureRecognizer.view?.hidden = true
+//            print("needCancel : \((gestureRecognizer.view?.center.y)!/cell!)")
+//            
+//            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
+//                sleep(1)
+//                dispatch_async(dispatch_get_main_queue()) {
+//                    gestureRecognizer.view?.removeFromSuperview()
+//                    self.deleteImageView.hidden = true
+//                    self.deleteImageView.backgroundColor = UIColor.blueColor()
+//                }
+//            }
+//        
+//        }
         
         return true
     }
+
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
