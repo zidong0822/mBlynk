@@ -10,7 +10,6 @@
 		2B52C188C3DA537970220813 /* Pods_mBlynk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58424ADCC55BC878E2402326 /* Pods_mBlynk.framework */; };
 		B9025C191D1A29CC00F3D828 /* MoveGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9025C181D1A29CC00F3D828 /* MoveGestureRecognizer.swift */; };
 		B9025C1F1D1A6C9300F3D828 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9025C1E1D1A6C9300F3D828 /* MenuViewController.swift */; };
-		B97070201D1A926E00C68109 /* Popover.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B97070191D1A917800C68109 /* Popover.framework */; };
 		B970702A1D1A9F2800C68109 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97070291D1A9F2800C68109 /* ContainerViewController.swift */; };
 		B97070371D1B831300C68109 /* MTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97070301D1B831300C68109 /* MTimer.swift */; };
 		B97070381D1B831300C68109 /* MUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97070311D1B831300C68109 /* MUIButton.swift */; };
@@ -27,8 +26,7 @@
 		B9843B941D05192F00035ACF /* mBlynkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9843B931D05192F00035ACF /* mBlynkTests.swift */; };
 		B9843B9F1D05192F00035ACF /* mBlynkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9843B9E1D05192F00035ACF /* mBlynkUITests.swift */; };
 		B9843BAE1D051A6100035ACF /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9843BAD1D051A6100035ACF /* AppConfig.swift */; };
-		B9843BB01D051CEA00035ACF /* UIColor+YH.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9843BAF1D051CEA00035ACF /* UIColor+YH.swift */; };
-		B9843BB41D05302400035ACF /* MoveGestureRecognizer1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9843BB31D05302400035ACF /* MoveGestureRecognizer1.swift */; };
+		B985277E1D1CFAE50024A9D5 /* mButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B985277D1D1CFAE50024A9D5 /* mButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,9 +74,8 @@
 		B9843B9E1D05192F00035ACF /* mBlynkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mBlynkUITests.swift; sourceTree = "<group>"; };
 		B9843BA01D05192F00035ACF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9843BAD1D051A6100035ACF /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
-		B9843BAF1D051CEA00035ACF /* UIColor+YH.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+YH.swift"; sourceTree = "<group>"; };
-		B9843BB31D05302400035ACF /* MoveGestureRecognizer1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoveGestureRecognizer1.swift; sourceTree = "<group>"; };
 		B9843BB51D053A1700035ACF /* mBlynk-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "mBlynk-Bridging-Header.h"; sourceTree = "<group>"; };
+		B985277D1D1CFAE50024A9D5 /* mButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mButton.swift; sourceTree = "<group>"; };
 		C8C7CE80BF28AF1D7C523689 /* Pods-mBlynk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mBlynk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mBlynk/Pods-mBlynk.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,7 +84,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B97070201D1A926E00C68109 /* Popover.framework in Frameworks */,
 				2B52C188C3DA537970220813 /* Pods_mBlynk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -129,6 +125,7 @@
 		B970702D1D1B828100C68109 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				B97070291D1A9F2800C68109 /* ContainerViewController.swift */,
 				B9843B801D05192E00035ACF /* MainViewController.swift */,
 			);
 			name = Main;
@@ -152,8 +149,17 @@
 				B97070341D1B831300C68109 /* RangeSliderThumbLayer.swift */,
 				B97070351D1B831300C68109 /* RangeSliderTrackLayer.swift */,
 				B97070361D1B831300C68109 /* ScoreView.swift */,
+				B985277D1D1CFAE50024A9D5 /* mButton.swift */,
 			);
 			name = Weight;
+			sourceTree = "<group>";
+		};
+		B97070461D1CD50900C68109 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				B9843BAD1D051A6100035ACF /* AppConfig.swift */,
+			);
+			name = Config;
 			sourceTree = "<group>";
 		};
 		B9843B721D05192E00035ACF = {
@@ -181,16 +187,13 @@
 		B9843B7D1D05192E00035ACF /* mBlynk */ = {
 			isa = PBXGroup;
 			children = (
+				B9843B7E1D05192E00035ACF /* AppDelegate.swift */,
+				B9843BB51D053A1700035ACF /* mBlynk-Bridging-Header.h */,
+				B97070461D1CD50900C68109 /* Config */,
 				B970702F1D1B82A900C68109 /* Weight */,
 				B970702E1D1B829300C68109 /* Gesture */,
 				B970702D1D1B828100C68109 /* Main */,
 				B970702C1D1B826A00C68109 /* Menu */,
-				B9843BB51D053A1700035ACF /* mBlynk-Bridging-Header.h */,
-				B9843BAD1D051A6100035ACF /* AppConfig.swift */,
-				B9843B7E1D05192E00035ACF /* AppDelegate.swift */,
-				B9843BAF1D051CEA00035ACF /* UIColor+YH.swift */,
-				B9843BB31D05302400035ACF /* MoveGestureRecognizer1.swift */,
-				B97070291D1A9F2800C68109 /* ContainerViewController.swift */,
 				B9843B821D05192E00035ACF /* Main.storyboard */,
 				B9843B851D05192E00035ACF /* Assets.xcassets */,
 				B9843B871D05192E00035ACF /* LaunchScreen.storyboard */,
@@ -409,12 +412,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B970702A1D1A9F2800C68109 /* ContainerViewController.swift in Sources */,
-				B9843BB01D051CEA00035ACF /* UIColor+YH.swift in Sources */,
 				B970703D1D1B831300C68109 /* ScoreView.swift in Sources */,
 				B9843BAE1D051A6100035ACF /* AppConfig.swift in Sources */,
 				B9843B811D05192E00035ACF /* MainViewController.swift in Sources */,
 				B970703B1D1B831300C68109 /* RangeSliderThumbLayer.swift in Sources */,
-				B9843BB41D05302400035ACF /* MoveGestureRecognizer1.swift in Sources */,
+				B985277E1D1CFAE50024A9D5 /* mButton.swift in Sources */,
 				B9025C191D1A29CC00F3D828 /* MoveGestureRecognizer.swift in Sources */,
 				B970703C1D1B831300C68109 /* RangeSliderTrackLayer.swift in Sources */,
 				B9843B7F1D05192E00035ACF /* AppDelegate.swift in Sources */,

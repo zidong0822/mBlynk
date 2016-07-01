@@ -16,13 +16,23 @@
         var moving:Bool? = false;
         var originalColor:UIColor? = nil
         var originalCenter:CGPoint? = nil
+        var realCenter:CGPoint? = nil
         var totalCount:Int? = 0
+        var xCount:Int? = 0
+        var yCount:Int? = 0
         var uiViews:[UIView] = []
-        let buffer:CGFloat = 50
+        let buffer:CGFloat = 44
+        let hBuffer:CGFloat = MAIN_SCREEN_WIDTH/8
+        let vBuffer:CGFloat = MAIN_SCREEN_HEIGHT/9
         var cell:CGFloat? = nil
         var isEdit:Bool? = false
-        
+        var overbool:Bool = false
         var uiImageView: UIView! = nil
+        
+        override init(target: AnyObject?, action: Selector) {
+            super.init(target: target, action: action)
+       
+        }
         
         func isMoving() -> Bool {
             return moving!
@@ -31,13 +41,7 @@
         func setEditMode(edit : Bool) {
             isEdit = edit
         }
-        
-        func setTotalCount(count : Int, c : CGFloat, views : [UIView]) {
-            totalCount = count
-            uiViews = views
-            cell = c
-        }
-        
+    
         override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
           
             self.view?.superview?.bringSubviewToFront(self.view!)
@@ -53,102 +57,48 @@
         }
         
         override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
-          //  print("touchesEnded : \(isEdit!)")
-
             
             if (isEdit! == false) {
                 moving = false
                 return
             }
-            
             self.view?.backgroundColor = originalColor
-            var center = self.view!.center
             let bounds = self.view!.bounds
+            var reallyCenter = CGPointMake(self.view!.center.x-10,self.view!.center.y-74)
+            let xx = CGFloat(xCount!)*HORIZONTALCELL+(bounds.width/2)
+            reallyCenter.x = xx+10
+            let yy = CGFloat(yCount!)*VERTICELCELL+(bounds.height/2)
+            reallyCenter.y = yy+74
+            self.view!.center = reallyCenter
 
-            var xxcount:Int = Int((center.x - (bounds.width/2))/cell!)
-            
-            
-            if xxcount <= 0 {
-                xxcount = 0
-            }
-            
-            if Int(6 - xxcount) < Int(bounds.width/cell!){
-                
-                xxcount = 6 - Int(bounds.width/cell!)
-                
-            }
-            
-            let xx = CGFloat(xxcount)*cell!+(bounds.width/2)
-            
-            center.x = xx
-            
-            
-            var yycount:Int = Int((center.y - (bounds.height/2))/cell!)
-            
-            if(yycount<=0){
-                
-                yycount = 0
-                
-            }
-            
-            if Int(11 - yycount) < Int(bounds.height/cell!){
-                
-                yycount = 11 - Int(bounds.height/cell!)
-                
-            }
-            
-            let yy = CGFloat(yycount)*cell!+(bounds.height/2)
-            
-            
-            center.y = yy
-            // Target area
-            let t1 = yy - bounds.height/2
-            let b1 = yy + bounds.height/2
-            let l1 = xx - bounds.width/2
-            let r1 = xx + bounds.width/2
-
-            for v in uiViews {
-                let top = v.center.y - v.bounds.height/2
-                let bottom = v.center.y + v.bounds.height/2
-                let left = v.center.x - v.bounds.width/2
-                let right = v.center.x + v.bounds.width/2
-
-                if (l1 >= right - buffer && r1 <= (self.view?.superview?.bounds.width)! + buffer) {
-    
-                } else if (t1 >= bottom - buffer && b1 <= (self.view?.superview?.bounds.height)! + buffer) {
-         
-                    
-                } else if (r1 <= left + buffer && l1 >= -buffer) {
-   
-                } else if (b1 <= top + buffer && t1 >= -buffer) {
-   
-                } else {
-                    print(v.tag)
-                    moving = false
-                    self.view!.center = originalCenter!
-                    return
-                }
-            }
-
-            moving = false
-
-            self.view!.center = center
+       
         }
+        
+        
+ 
         
         override func touchesCancelled(touches: Set<UITouch>?, withEvent event: UIEvent?) {
-           // print("touchesCancelled : \(isEdit!)")
+   
             moving = false
             isEdit = false
+            
+            print("touchesCancelled")
+            
         }
         
+        
+        
+        
+        
         override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
-         //   print("touchesMoved : \(isEdit!)")
+     
+            self.view?.backgroundColor = UIColor.greenColor()
+            
             if (isEdit! == false) {
                 moving = false
                 return
             }
             
-            self.view?.backgroundColor = UIColor.redColor()
             moving = true
             var center = self.view!.center
    
@@ -162,8 +112,64 @@
 
             center.y += (currentPoint.y - previousPoint.y)
 
-            self.view!.center = center;
-
+            self.view!.center = center
+            let bounds = self.view!.bounds
+            let realCenter = CGPointMake(self.view!.center.x-10,self.view!.center.y-74)
+            
+            
+            uiViews =  (self.view?.superview?.subviews.filter({$0.tag != self.view!.tag}))!
+            
+            
+            if(uiViews.count==0){
+            
+                 xCount = Int((realCenter.x - (bounds.width/2))/HORIZONTALCELL)
+                 yCount = Int((realCenter.y - (bounds.height/2))/VERTICELCELL)
+            }
+            
+            for v in uiViews {
+            
+              
+               if   CGRectContainsPoint(v.frame,(self.view?.center)!) && CGRectIntersectsRect(v.frame,(self.view?.frame)!){
+    
+               }else{
+                
+                xCount = Int((realCenter.x - (bounds.width/2))/HORIZONTALCELL)
+                yCount = Int((realCenter.y - (bounds.height/2))/VERTICELCELL)
+                
+                }
+            }
+            if !overbool{
+            
+                moving = false
+                
+                
+                
+                if xCount <= 0 {
+                    xCount = 0
+                }
+                if Int(8 - xCount!) <= Int(bounds.width/HORIZONTALCELL){
+                    
+                    xCount = 8 - Int(bounds.width/HORIZONTALCELL)
+                    
+                }
+             
+                
+                if(yCount<=0){
+                    
+                    yCount = 0
+                }
+                if Int(11 - yCount!) <= Int(bounds.height/VERTICELCELL){
+                    
+                    yCount = 11 - Int(bounds.height/VERTICELCELL)
+                }
+                print(xCount,yCount)
+              
+            }else{
+                moving = false
+           
+            }
+            overbool = false
+            
         }
         
     }

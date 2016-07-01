@@ -7,134 +7,132 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		14B1D59552806E0BAABF1BA22B1EE570 /* Pods-mBlynk-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A20E17CF48D464AE76DD4A9F1CC15C3 /* Pods-mBlynk-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		19B54C7F8A81AAA32C839FFBE78D77C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		1FD6F417E39D6A8F563F14B658BF3A6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		42AB603396E7805AD9E8E2003DD8479F /* Popover-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FD088A33E7536928DF09F1C35E2D33 /* Popover-dummy.m */; };
-		AADD6AFE86E02B61CA48D33D06675CDA /* Popover-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A8A1492F901710D046D029E083A0F3C0 /* Popover-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ACAB264E6B1882F6172CEFAE3157FACE /* Popover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC813627C80A0D70EB6CA0B9AD3F462 /* Popover.swift */; };
-		DAC6165B670D4968281849BD9C103C95 /* Pods-mBlynk-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B3DB15223BB87E805CD16AD99AD81B /* Pods-mBlynk-dummy.m */; };
+		0AB49A71439182D3459AD90922663461 /* UIImage+Hue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904C5C286F7827D05D6F8593CFDE437A /* UIImage+Hue.swift */; };
+		4CAC5365F172A3D9E9055B9DD68C3DB8 /* Pods-mBlynk-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A20E17CF48D464AE76DD4A9F1CC15C3 /* Pods-mBlynk-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55D494B9B321CE6E4EEBC3AD9591C503 /* Hue-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6A17ADCE095E734E2CD428F66B5A0F /* Hue-dummy.m */; };
+		680164BA36D05A358FAC61594C96AC49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		8A553FAA201B4F68C2D4E01FC37CAC9C /* UIColor+Hue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A462FF50296DDF57AA922E95215295B4 /* UIColor+Hue.swift */; };
+		AEBEF324271AA808622D3C27290555EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		CC1D9730CD5F886B9E997ECA7367D50D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */; };
+		D5EE325CFBF0E677E5998FED29A84F21 /* Hue-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BD55FE44411E29D7F81C7714D163949F /* Hue-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE343EAACC9AC438FD3AAB530ACA8AEE /* Pods-mBlynk-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B3DB15223BB87E805CD16AD99AD81B /* Pods-mBlynk-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B555D62CB8F3B62EA88532A6662A334E /* PBXContainerItemProxy */ = {
+		6FBDDE43844C3E14D0FD421A9E128FAC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 917E5062F136FE020F9CC7DC45A05AC7;
-			remoteInfo = Popover;
+			remoteGlobalIDString = 9DA8BA57ABBFCD7C8E1CD68B44B1DECD;
+			remoteInfo = Hue;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		07FD088A33E7536928DF09F1C35E2D33 /* Popover-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Popover-dummy.m"; sourceTree = "<group>"; };
 		0AA9AFB6350034127A0C88492D1AF14A /* Pods-mBlynk-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-mBlynk-acknowledgements.plist"; sourceTree = "<group>"; };
-		0EB8A8ABA3A34F17C1BCEA66171AE9C9 /* Popover.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Popover.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2787D1E50AC733FC416D7A0D3388CE0D /* Popover.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Popover.modulemap; sourceTree = "<group>"; };
+		1E6A17ADCE095E734E2CD428F66B5A0F /* Hue-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Hue-dummy.m"; sourceTree = "<group>"; };
 		278E8D572B39497E2B1883DD6A508037 /* Pods-mBlynk-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-mBlynk-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2832DAC38604D18A36B4F105CE5317B7 /* Pods-mBlynk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-mBlynk.debug.xcconfig"; sourceTree = "<group>"; };
-		2C4BFB67DF29A9381D6446972F17D96B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E4A70E09EDEB56F58D847FBAB47FB1E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43EA0BC0D6FF413B9E849CF2BDD817AB /* Pods-mBlynk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-mBlynk.release.xcconfig"; sourceTree = "<group>"; };
 		44B3DB15223BB87E805CD16AD99AD81B /* Pods-mBlynk-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-mBlynk-dummy.m"; sourceTree = "<group>"; };
-		5523FF5A1870DA2E6F03442BB2F3E428 /* Popover-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Popover-prefix.pch"; sourceTree = "<group>"; };
 		639FE0C9C580DFBA54854BCAB04A28F1 /* Pods-mBlynk-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-mBlynk-frameworks.sh"; sourceTree = "<group>"; };
-		7FC813627C80A0D70EB6CA0B9AD3F462 /* Popover.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Popover.swift; path = Classes/Popover.swift; sourceTree = "<group>"; };
+		89FE0C5FC226B0194EC53939A633EA93 /* Hue.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Hue.xcconfig; sourceTree = "<group>"; };
+		904C5C286F7827D05D6F8593CFDE437A /* UIImage+Hue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Hue.swift"; path = "Source/iOS/UIImage+Hue.swift"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9A20E17CF48D464AE76DD4A9F1CC15C3 /* Pods-mBlynk-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-mBlynk-umbrella.h"; sourceTree = "<group>"; };
+		A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		A462FF50296DDF57AA922E95215295B4 /* UIColor+Hue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Hue.swift"; path = "Source/iOS/UIColor+Hue.swift"; sourceTree = "<group>"; };
 		A7A8BF441DB4A7ECCAD7D6F4885A842A /* Pods-mBlynk-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-mBlynk-resources.sh"; sourceTree = "<group>"; };
-		A8A1492F901710D046D029E083A0F3C0 /* Popover-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Popover-umbrella.h"; sourceTree = "<group>"; };
 		B523DB05DCF285F5CD9E2B86EE01CCE1 /* Pods-mBlynk.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-mBlynk.modulemap"; sourceTree = "<group>"; };
-		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		EB27F947696B657DBDC66ADFE6E06238 /* Popover.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Popover.xcconfig; sourceTree = "<group>"; };
-		F1041CADD0BC44C5FA6E3077AEA1847E /* Pods_mBlynk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mBlynk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA97C27512D3BA8B49CBBA9FAB923955 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB7245C3FA812F4E1B723AFC94F19216 /* Hue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD55FE44411E29D7F81C7714D163949F /* Hue-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Hue-umbrella.h"; sourceTree = "<group>"; };
+		C1921C16D45E40744B69F734202CE41D /* Hue.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Hue.modulemap; sourceTree = "<group>"; };
+		DB99902A23FDC90A59A306CAEBEF0F24 /* Hue-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Hue-prefix.pch"; sourceTree = "<group>"; };
+		DFDE87C9CA0D9CA5A4E2369BF56EE109 /* Pods_mBlynk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mBlynk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		41D3727CA57DED86BBC0801383290C7B /* Frameworks */ = {
+		C4BBB23D89721119A839A967BBD1B874 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FD6F417E39D6A8F563F14B658BF3A6B /* Foundation.framework in Frameworks */,
+				AEBEF324271AA808622D3C27290555EC /* Foundation.framework in Frameworks */,
+				CC1D9730CD5F886B9E997ECA7367D50D /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E43573736AD03E13BA1672B7822B4A57 /* Frameworks */ = {
+		E00D5A35B2B296AA5583D5CAFAC1E918 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19B54C7F8A81AAA32C839FFBE78D77C7 /* Foundation.framework in Frameworks */,
+				680164BA36D05A358FAC61594C96AC49 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1B92F17D60E86AC6BFB9F534287B4ADD /* Support Files */ = {
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2C4BFB67DF29A9381D6446972F17D96B /* Info.plist */,
-				2787D1E50AC733FC416D7A0D3388CE0D /* Popover.modulemap */,
-				EB27F947696B657DBDC66ADFE6E06238 /* Popover.xcconfig */,
-				07FD088A33E7536928DF09F1C35E2D33 /* Popover-dummy.m */,
-				5523FF5A1870DA2E6F03442BB2F3E428 /* Popover-prefix.pch */,
-				A8A1492F901710D046D029E083A0F3C0 /* Popover-umbrella.h */,
+				F302CD3B306AF1ED96B9AF31FCDBC26C /* iOS */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Popover";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+		44E5BE489E661DA4743450C70B2C59CE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		3EC15E17581E3AE6257EE71C936C56C8 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F1041CADD0BC44C5FA6E3077AEA1847E /* Pods_mBlynk.framework */,
-				0EB8A8ABA3A34F17C1BCEA66171AE9C9 /* Popover.framework */,
+				BB7245C3FA812F4E1B723AFC94F19216 /* Hue.framework */,
+				DFDE87C9CA0D9CA5A4E2369BF56EE109 /* Pods_mBlynk.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		547FB57E0DE762BCDE11A3302693474D /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				5802CB42896B3FB67A2F3F2ECA9A1063 /* Popover */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		5802CB42896B3FB67A2F3F2ECA9A1063 /* Popover */ = {
-			isa = PBXGroup;
-			children = (
-				7FC813627C80A0D70EB6CA0B9AD3F462 /* Popover.swift */,
-				1B92F17D60E86AC6BFB9F534287B4ADD /* Support Files */,
-			);
-			path = Popover;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				547FB57E0DE762BCDE11A3302693474D /* Pods */,
-				3EC15E17581E3AE6257EE71C936C56C8 /* Products */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				B3BFD46E7DC9057F91B7F6F99F290FA4 /* Pods */,
+				44E5BE489E661DA4743450C70B2C59CE /* Products */,
 				D61792765745D3CF628DB6C2BC7C8616 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		99BCA580C8C3137C76EED3391D7EB540 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+				C1921C16D45E40744B69F734202CE41D /* Hue.modulemap */,
+				89FE0C5FC226B0194EC53939A633EA93 /* Hue.xcconfig */,
+				1E6A17ADCE095E734E2CD428F66B5A0F /* Hue-dummy.m */,
+				DB99902A23FDC90A59A306CAEBEF0F24 /* Hue-prefix.pch */,
+				BD55FE44411E29D7F81C7714D163949F /* Hue-umbrella.h */,
+				BA97C27512D3BA8B49CBBA9FAB923955 /* Info.plist */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/Hue";
+			sourceTree = "<group>";
+		};
+		B3BFD46E7DC9057F91B7F6F99F290FA4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD35ECC4482B2D4B47BA81C1897567FE /* Hue */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BD35ECC4482B2D4B47BA81C1897567FE /* Hue */ = {
+			isa = PBXGroup;
+			children = (
+				A462FF50296DDF57AA922E95215295B4 /* UIColor+Hue.swift */,
+				904C5C286F7827D05D6F8593CFDE437A /* UIImage+Hue.swift */,
+				99BCA580C8C3137C76EED3391D7EB540 /* Support Files */,
+			);
+			path = Hue;
 			sourceTree = "<group>";
 		};
 		D61792765745D3CF628DB6C2BC7C8616 /* Targets Support Files */ = {
@@ -163,61 +161,70 @@
 			path = "Target Support Files/Pods-mBlynk";
 			sourceTree = "<group>";
 		};
+		F302CD3B306AF1ED96B9AF31FCDBC26C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */,
+				E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1EC41ADF4B629529C8CDF02BFC54050E /* Headers */ = {
+		4719D4E798CC0290A48665E67FAB6AD1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14B1D59552806E0BAABF1BA22B1EE570 /* Pods-mBlynk-umbrella.h in Headers */,
+				D5EE325CFBF0E677E5998FED29A84F21 /* Hue-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8433A4C25813929E53A327B22DEBBAAA /* Headers */ = {
+		5D483EAD2BE63772B0FA82E1C98748FD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AADD6AFE86E02B61CA48D33D06675CDA /* Popover-umbrella.h in Headers */,
+				4CAC5365F172A3D9E9055B9DD68C3DB8 /* Pods-mBlynk-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5AB5D8954A780D10BC94B204A209F10D /* Pods-mBlynk */ = {
+		9DA8BA57ABBFCD7C8E1CD68B44B1DECD /* Hue */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8DB580D7752080513A18594633D7833C /* Build configuration list for PBXNativeTarget "Pods-mBlynk" */;
+			buildConfigurationList = 0D71E2D05B9934B19AD16F89A8D2C671 /* Build configuration list for PBXNativeTarget "Hue" */;
 			buildPhases = (
-				44310D74CB4BF24B9F30397658C2A66D /* Sources */,
-				41D3727CA57DED86BBC0801383290C7B /* Frameworks */,
-				1EC41ADF4B629529C8CDF02BFC54050E /* Headers */,
+				E24E379EF0AC3D8CA15EEF4F1B127566 /* Sources */,
+				C4BBB23D89721119A839A967BBD1B874 /* Frameworks */,
+				4719D4E798CC0290A48665E67FAB6AD1 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6E80241AFDDDD8763DFAE5EB7A016D61 /* PBXTargetDependency */,
+			);
+			name = Hue;
+			productName = Hue;
+			productReference = BB7245C3FA812F4E1B723AFC94F19216 /* Hue.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CBABCFBD4C5C212863E382AFBD770A4A /* Pods-mBlynk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F99F1F889628AC1ACDD5577A21470C96 /* Build configuration list for PBXNativeTarget "Pods-mBlynk" */;
+			buildPhases = (
+				805E277C0B99AA54506C0829F6D7A3C8 /* Sources */,
+				E00D5A35B2B296AA5583D5CAFAC1E918 /* Frameworks */,
+				5D483EAD2BE63772B0FA82E1C98748FD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0EF48EB1CDCE7EEF7CA242CEFE043FB8 /* PBXTargetDependency */,
 			);
 			name = "Pods-mBlynk";
 			productName = "Pods-mBlynk";
-			productReference = F1041CADD0BC44C5FA6E3077AEA1847E /* Pods_mBlynk.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		917E5062F136FE020F9CC7DC45A05AC7 /* Popover */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3098B39852DD7F0962A4B03D0A55BB69 /* Build configuration list for PBXNativeTarget "Popover" */;
-			buildPhases = (
-				09DA4C0A67B57B4EB5C464848DA56C05 /* Sources */,
-				E43573736AD03E13BA1672B7822B4A57 /* Frameworks */,
-				8433A4C25813929E53A327B22DEBBAAA /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Popover;
-			productName = Popover;
-			productReference = 0EB8A8ABA3A34F17C1BCEA66171AE9C9 /* Popover.framework */;
+			productReference = DFDE87C9CA0D9CA5A4E2369BF56EE109 /* Pods_mBlynk.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -237,42 +244,43 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 3EC15E17581E3AE6257EE71C936C56C8 /* Products */;
+			productRefGroup = 44E5BE489E661DA4743450C70B2C59CE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5AB5D8954A780D10BC94B204A209F10D /* Pods-mBlynk */,
-				917E5062F136FE020F9CC7DC45A05AC7 /* Popover */,
+				9DA8BA57ABBFCD7C8E1CD68B44B1DECD /* Hue */,
+				CBABCFBD4C5C212863E382AFBD770A4A /* Pods-mBlynk */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		09DA4C0A67B57B4EB5C464848DA56C05 /* Sources */ = {
+		805E277C0B99AA54506C0829F6D7A3C8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42AB603396E7805AD9E8E2003DD8479F /* Popover-dummy.m in Sources */,
-				ACAB264E6B1882F6172CEFAE3157FACE /* Popover.swift in Sources */,
+				FE343EAACC9AC438FD3AAB530ACA8AEE /* Pods-mBlynk-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		44310D74CB4BF24B9F30397658C2A66D /* Sources */ = {
+		E24E379EF0AC3D8CA15EEF4F1B127566 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAC6165B670D4968281849BD9C103C95 /* Pods-mBlynk-dummy.m in Sources */,
+				55D494B9B321CE6E4EEBC3AD9591C503 /* Hue-dummy.m in Sources */,
+				8A553FAA201B4F68C2D4E01FC37CAC9C /* UIColor+Hue.swift in Sources */,
+				0AB49A71439182D3459AD90922663461 /* UIImage+Hue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6E80241AFDDDD8763DFAE5EB7A016D61 /* PBXTargetDependency */ = {
+		0EF48EB1CDCE7EEF7CA242CEFE043FB8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Popover;
-			target = 917E5062F136FE020F9CC7DC45A05AC7 /* Popover */;
-			targetProxy = B555D62CB8F3B62EA88532A6662A334E /* PBXContainerItemProxy */;
+			name = Hue;
+			target = 9DA8BA57ABBFCD7C8E1CD68B44B1DECD /* Hue */;
+			targetProxy = 6FBDDE43844C3E14D0FD421A9E128FAC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -319,9 +327,9 @@
 			};
 			name = Debug;
 		};
-		543BF58DE404161D8FC7DA0B4E4CC2FB /* Release */ = {
+		81DB0B1311AE8E7B897A294C039C03E8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB27F947696B657DBDC66ADFE6E06238 /* Popover.xcconfig */;
+			baseConfigurationReference = 89FE0C5FC226B0194EC53939A633EA93 /* Hue.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -332,14 +340,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Popover/Popover-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Popover/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Hue/Hue-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Hue/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Popover/Popover.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Hue/Hue.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Popover;
+				PRODUCT_NAME = Hue;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -348,9 +356,9 @@
 			};
 			name = Release;
 		};
-		921992273057ADC5D537074ECAFA5171 /* Debug */ = {
+		907BFF6AD368D860ACCA6C8ED57E74BB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB27F947696B657DBDC66ADFE6E06238 /* Popover.xcconfig */;
+			baseConfigurationReference = 2832DAC38604D18A36B4F105CE5317B7 /* Pods-mBlynk.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -361,14 +369,18 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Popover/Popover-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Popover/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-mBlynk/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Popover/Popover.modulemap";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-mBlynk/Pods-mBlynk.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Popover;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_mBlynk;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -416,41 +428,7 @@
 			};
 			name = Release;
 		};
-		C4717EF87606B7CA8D33E9E3178C4A02 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2832DAC38604D18A36B4F105CE5317B7 /* Pods-mBlynk.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-mBlynk/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-mBlynk/Pods-mBlynk.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_mBlynk;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D6FF7B750F6D0C12A52960E0BD9C9974 /* Release */ = {
+		D2774BFB48DA7E78B739CAAC267A9D3B /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 43EA0BC0D6FF413B9E849CF2BDD817AB /* Pods-mBlynk.release.xcconfig */;
 			buildSettings = {
@@ -483,9 +461,48 @@
 			};
 			name = Release;
 		};
+		EED9215CABF01A861DC1CBBE08B3A41A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89FE0C5FC226B0194EC53939A633EA93 /* Hue.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Hue/Hue-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Hue/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Hue/Hue.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Hue;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0D71E2D05B9934B19AD16F89A8D2C671 /* Build configuration list for PBXNativeTarget "Hue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EED9215CABF01A861DC1CBBE08B3A41A /* Debug */,
+				81DB0B1311AE8E7B897A294C039C03E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -495,20 +512,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3098B39852DD7F0962A4B03D0A55BB69 /* Build configuration list for PBXNativeTarget "Popover" */ = {
+		F99F1F889628AC1ACDD5577A21470C96 /* Build configuration list for PBXNativeTarget "Pods-mBlynk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				921992273057ADC5D537074ECAFA5171 /* Debug */,
-				543BF58DE404161D8FC7DA0B4E4CC2FB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8DB580D7752080513A18594633D7833C /* Build configuration list for PBXNativeTarget "Pods-mBlynk" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C4717EF87606B7CA8D33E9E3178C4A02 /* Debug */,
-				D6FF7B750F6D0C12A52960E0BD9C9974 /* Release */,
+				907BFF6AD368D860ACCA6C8ED57E74BB /* Debug */,
+				D2774BFB48DA7E78B739CAAC267A9D3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

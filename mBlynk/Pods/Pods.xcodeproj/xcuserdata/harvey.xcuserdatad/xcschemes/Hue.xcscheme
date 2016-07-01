@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '917E5062F136FE020F9CC7DC45A05AC7'
-               BlueprintName = 'Popover'
+               BlueprintIdentifier = '9DA8BA57ABBFCD7C8E1CD68B44B1DECD'
+               BlueprintName = 'Hue'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Popover.framework'>
+               BuildableName = 'Hue.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

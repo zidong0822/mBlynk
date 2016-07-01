@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Hue
 protocol  MenuViewControllerDelegate {
     func closeSideMenu()
 
@@ -18,7 +19,7 @@ class MenuViewController: UIViewController {
     override func viewDidLoad() {
         
         let menuTableview = UITableView(frame:CGRectMake(0,0,SCREEN_WIDTH,SCREEN_HEIGHT), style:UITableViewStyle.Plain)
-        menuTableview.backgroundColor = UIColor(rgba:"#E6E6E6")
+        menuTableview.backgroundColor = UIColor.hex("#E6E6E6")
         menuTableview.dataSource = self
         menuTableview.delegate = self
         menuTableview.tableFooterView = UIView()

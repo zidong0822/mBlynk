@@ -3,7 +3,7 @@ platform :ios, '8.0'
 use_frameworks!
 
 def pods
- 	 pod "Popover"
+ 	 pod 'Hue'
 end
 
 target 'mBlynk' do
